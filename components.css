@@ -1,0 +1,149 @@
+/* profile */
+
+.profile {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+@media (min-width: 768px) {
+  .profile {
+  }
+}
+
+.profile-wrapper {
+  display: flex;
+  gap: 16px;
+}
+
+.avatar {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+}
+
+.avatar-info p {
+  margin: 0;
+  color: var(--grey-900);
+}
+
+.avatar-info time {
+  color: var(--grey-400);
+}
+
+/* share button */
+
+.share-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  background-color: var(--grey-200);
+}
+
+/* Share toast */
+
+.share-btn-toast {
+  background-color: var(--grey-500);
+}
+
+.share-btn-toast svg path {
+  fill: var(--white);
+}
+
+/* Mobile toast */
+
+#mobile-toast.hidden {
+  display: none;
+}
+
+#mobile-toast {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 76px;
+  width: 327px;
+  background-color: var(--grey-900);
+  border-bottom-right-radius: 10px;
+  border-bottom-left-radius: 10px;
+  padding: 22px 30px;
+  position: absolute;
+  bottom: 0px;
+}
+
+#mobile-toast-text {
+  display: flex;
+  gap: 24px;
+  align-items: center;
+  justify-content: center;
+}
+
+#mobile-toast-text p {
+  color: var(--grey-400);
+  margin: 0;
+}
+
+#social-icons {
+  display: flex;
+  gap: 16px;
+}
+
+/* Large screen toast */
+
+#large-screen-toast.hidden {
+  display: none;
+}
+
+.share-btn-toast-clicked {
+  background-color: var(--grey-500);
+}
+
+.share-btn-toast-clicked svg path {
+  fill: var(--white);
+}
+
+#large-screen-toast {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: absolute;
+  bottom: 94px;
+  right: -72px;
+}
+
+@media (min-width: 1440px) {
+  #large-screen-toast {
+    bottom: 84px;
+  }
+}
+
+#large-screen-toast-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 24px;
+  height: 55px;
+  width: 248px;
+  background-color: var(--grey-900);
+  border-radius: 10px;
+  padding: 18px 30px;
+}
+
+#large-screen-toast-content p {
+  color: var(--grey-400);
+}
+
+#large-screen-social-icons {
+  display: flex;
+  gap: 16px;
+}
+
+#call-out {
+  width: 0;
+  height: 0;
+  border-left: 12px solid transparent;
+  border-right: 12px solid transparent;
+  border-top: 12px solid var(--grey-900);
+}
